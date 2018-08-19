@@ -50,7 +50,7 @@
             "reset",
             "toggle"
           ],
-          "default": "toggle",
+          "default": "reset",
           "description": "%config.stopwatch.statusBar.clickCommand%"
         }
       }
