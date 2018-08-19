@@ -1,0 +1,85 @@
+{
+  "name": "stopwatch",
+  "displayName": "Stopwatch",
+  "description": "Simple Stopwatch for VS Code.",
+  "version": "0.0.1",
+  "publisher": "keifukuda",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keifukuda/vscode-stopwatch"
+  },
+  "engines": {
+    "vscode": "^1.26.0"
+  },
+  "license": "MIT",
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "Stopwatch",
+    "Timer"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "stopwatch.reset",
+        "title": "%command.stopwatch.reset.title%",
+        "category": "%command.stopwatch.category%"
+      },
+      {
+        "command": "stopwatch.stop",
+        "title": "%command.stopwatch.stop.title%",
+        "category": "%command.stopwatch.category%"
+      },
+      {
+        "command": "stopwatch.restart",
+        "title": "%command.stopwatch.restart.title%",
+        "category": "%command.stopwatch.category%"
+      }
+    ],
+    "configuration": {
+      "title": "%config.stopwatch.title%",
+      "properties": {
+        "stopwatch.statusBar.clickCommand": {
+          "type": "string",
+          "enum": [
+            "reset",
+            "toggle"
+          ],
+          "default": "toggle",
+          "description": "%config.stopwatch.statusBar.clickCommand%"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "gulp",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^10.7.0",
+    "del": "^3.0.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-filter": "^5.1.0",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "run-sequence": "^2.2.1",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1",
+    "vsce": "^1.46.0",
+    "vscode": "^1.1.6",
+    "vscode-nls-dev": "^3.0.9"
+  },
+  "dependencies": {
+    "vscode-nls": "^3.2.4"
+  }
+}

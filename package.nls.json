@@ -1,0 +1,8 @@
+{
+  "command.stopwatch.reset.title": "Reset",
+  "command.stopwatch.stop.title": "Stop",
+  "command.stopwatch.restart.title": "Restart",
+  "command.stopwatch.category": "Stopwatch",
+  "config.stopwatch.title": "Stopwatch",
+  "config.stopwatch.statusBar.clickCommand": "Specifies the command to be executed when the status bar stopwatch is clicked."
+}

@@ -1,0 +1,8 @@
+{
+	"command.stopwatch.reset.title": "リセット",
+	"command.stopwatch.stop.title": "一時停止",
+	"command.stopwatch.restart.title": "リスタート",
+	"command.stopwatch.category": "ストップウォッチ",
+	"config.stopwatch.title": "ストップウォッチ",
+	"config.stopwatch.statusBar.clickCommand": "ステータスバーのストップウォッチがクリックされたときに実行されるコマンドを指定します。"
+}
